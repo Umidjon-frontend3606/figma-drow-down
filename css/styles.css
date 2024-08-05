@@ -1,0 +1,109 @@
+:root {
+	---blac-color: #000;
+	--gray-color: #969696;
+	--white-color: #fff;
+	--galati-color: #595959;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: inherit;
+	font-size: 62.5%;
+	height: 100vh;
+}
+
+body {
+	height: 100vh;
+	font-family: 'Montserrat' sans-serif;
+}
+
+.wrapper {
+	background-image: url(../img/bg-orqa.jpg);
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1330px;
+	width: 100%;
+	padding-right: 2.5rem;
+	padding-left: 2.5rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+.site-title {
+	color: var(---blac-color);
+	font-size: 3.6rem;
+	margin-bottom: 3rem;
+}
+.menu {
+	margin-bottom: 5rem;
+}
+.menu__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+.menu__item:not(:last-child) {
+	margin-right: 4.6rem;
+}
+.menu__link {
+	font-weight: 400;
+	font-size: 1.8rem;
+	line-height: 1.2rem;
+	color: var(--gray-color);
+}
+.menu__link-active {
+	font-weight: 600;
+	text-decoration: none;
+	color: var(---blac-color);
+}
+.fax {
+	background-color: var(--white-color);
+	margin-bottom: 2rem;
+	padding: 2rem 3rem;
+	border-radius: 10px;
+}
+.fax__top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+}
+.fax__title {
+	color: var(---blac-color);
+	font-weight: 600;
+	font-size: 1.8rem;
+	line-height: 1.5;
+}
+.fax__bottom {
+	color: var(--galati-color);
+	padding-left: 3 rem;
+	padding-right: 3 rem;
+border-radius: 1 rem;
+	font-size: 1.8rem;
+	line-height: 1.5;
+	display: none;
+}
+
+.visable {
+	display: block;
+}
